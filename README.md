@@ -2,5 +2,5 @@
 
 This repository contains two interactives translated to Te Reo Māori as a proof of concept for future work.
 
-- [WhKāKa Whakaranu Tae](https://uccser.github.io/cs-field-guide-mi-interactive-test/rgb-mixer/)
+- [Whakaranu Tae](https://uccser.github.io/cs-field-guide-mi-interactive-test/rgb-mixer/)
 - [Whakaōrite Tae](https://uccser.github.io/cs-field-guide-mi-interactive-test/colour-matcher/)
