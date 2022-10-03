@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="mi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+    </head>
+    <body>
+        <div id="interactive-colour-matcher" class="container">
+            <h2 class="mt-2">Whakaōrite Tae</h2>
+
+            <p>Tuatahi, whakaōritehia mai te tae i te pouaka ki te moka-24 i te kōnekeneke.</p>
+
+            <div class="section bordered">
+                <div class="flex-parent mt-2">
+                    <div class="flex-child-sliders">
+                        <h4>moka-24</h4>
+                        <div id="interactive-colour-matcher-24-bit-sliders" class="interactive-colour-matcher-sliders">
+                            <div>
+                                <div class="interactive-colour-matcher-heading">
+                                    <strong>Whero (Wh)</strong> - E 8 ngā moka whero kua tau ki <span class='representation-text'></span>
+                                </div>
+                                <div class="interactive-colour-matcher-slider interactive-colour-matcher-24-bit-slider"></div>
+                            </div>
+                            <div>
+                                <div class="interactive-colour-matcher-heading">
+                                    <strong>Kākāriki (Kā)</strong> - E 8 ngā moka kākāriki kua tau ki <span class='representation-text'></span>
+                                </div>
+                                <div class="interactive-colour-matcher-slider interactive-colour-matcher-24-bit-slider"></div>
+                            </div>
+                            <div>
+                                <div class="interactive-colour-matcher-heading">
+                                    <strong>Kahurangi (Ka)</strong> - E 8 ngā moka kahurangi kua tau ki <span class='representation-text'></span>
+                                </div>
+                                <div class="interactive-colour-matcher-slider interactive-colour-matcher-24-bit-slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-child flex-parent flex-parent-column">
+                        <h5>tae moka-24</h5>
+                        <div class="flex-child interactive-colour-matcher-result" id="interactive-colour-matcher-24-bit-result">
+                        </div>
+                    </div>
+                    <div class="flex-child flex-parent flex-parent-column">
+                        <h5>tae whāinga</h5>
+                        <div class="flex-child interactive-colour-matcher-result interactive-colour-matcher-goal"></div>
+                    </div>
+                </div>
+
+                <div class="section-representation">
+                    <div class="interactive-colour-matcher-heading">
+                        <strong>he tau moka</strong> - Pāwhiringia mai he moka kia panoni i tana uara
+                    </div>
+                    <div id="interactive-colour-matcher-bit-representation-24" class="flex-parent">
+                    </div>
+                </div>
+                <div class="section-representation hexadecimal">
+                    <div class="interactive-colour-matcher-heading">
+                        <strong>he tau moka tau ā-ira tuangahuru mā ono</strong>
+                    </div>
+                    <div id="interactive-colour-matcher-hexadecimal-representation-24" class='representation-text'></div>
+                </div>
+
+                <p>Ka hiahia āwhina kia rapa i te uara tika?</p>
+                <div class="d-flex justify-content-start">
+                    <button id="interactive-colour-matcher-help" type="button" class="btn btn-danger">
+                        Tautokona au kia whakatau te whero
+                    </button>
+                </div>
+            </div>
+
+
+            <p>Inaianei, whakaōritehia mai te tae whāinga mā te moka-8 kōnekeneke</p>
+
+
+            <div class="section bordered">
+                <div class="flex-parent mt-2">
+                    <div class="flex-child-sliders">
+                        <h4>moka-8</h4>
+                        <div id="interactive-colour-matcher-8-bit-sliders" class="interactive-colour-matcher-sliders">
+                            <div>
+                                <div>
+                                    <strong>Whero (Wh)</strong> - E 3 ngā moka whero kua tau ki <span class='representation-text'></span>
+                                </div>
+                                <div class="interactive-colour-matcher-slider interactive-colour-matcher-8-bit-slider"></div>
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>Kākāriki (Kā)</strong> - E 3 ngā moka kākāriki kua tau ki <span class='representation-text'></span>
+                                </div>
+                                <div class="interactive-colour-matcher-slider interactive-colour-matcher-8-bit-slider"></div>
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>Kahurangi (Ka)</strong> - E 2 ngā moka kahurangi kua tau ki <span class='representation-text'></span>
+                                </div>
+                                <div class="interactive-colour-matcher-slider interactive-colour-matcher-8-bit-slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-child flex-parent flex-parent-column">
+                        <h5>tae moka-8</h5>
+                        <div class="flex-child interactive-colour-matcher-result" id="interactive-colour-matcher-8-bit-result">
+                        </div>
+                    </div>
+                    <div class="flex-child flex-parent flex-parent-column">
+                        <h5>tae whāinga</h5>
+                        <div class="flex-child interactive-colour-matcher-result interactive-colour-matcher-goal"></div>
+                    </div>
+                </div>
+
+                <div class="section-representation">
+                    <div class="interactive-colour-matcher-heading">
+                        <strong>he tau moka</strong> - Pāwhiringia mai he moka kia panoni i tana uara
+                    </div>
+                    <div id="interactive-colour-matcher-bit-representation-8" class="flex-parent">
+                    </div>
+                </div>
+                <div class="section-representation hexadecimal">
+                    <div><strong>he tau moka tau ā-ira tuangahuru mā ono</strong></div>
+                    <div id="interactive-colour-matcher-hexadecimal-representation-8" class='representation-text'></div>
+                </div>
+            </div>
+
+            <button id="interactive-colour-matcher-reset" type="button" class="btn btn-primary">Whakamatauria mai he tae anō</button>
+        </div>
+
+        <!--  CSS  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css"
+            integrity="sha256-nckVXP1jMdH1YpiBrAvGOSgkP6TB2DsXzkkhtSAL4K4=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/colour-matcher/colour-matcher.css">
+
+        <!--  JavaScript  -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"
+            integrity="sha256-HzOwAgcEXe5/3RZFpCL8TWpHyN1naLcUuQdayYiGkoY=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"
+            integrity="sha256-DkHIFUKQfqQ7jA6GnWR9ZyB4Jb+j+dOuY12vnYq8xjk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/colour-matcher/colour-matcher.js"></script>
+    </body>
+</html>

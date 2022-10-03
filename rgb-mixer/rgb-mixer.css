@@ -1,0 +1,50 @@
+#interactive-rgb-mixer .noUi-pips {
+    padding-top: 5px;
+}
+
+#interactive-rgb-mixer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+#interactive-rgb-mixer-result {
+    background: rgb(127, 127, 127);
+    color: rgb(127, 127, 127);
+    border: 1px solid black;
+    box-shadow: 0 0 10px;
+}
+
+#interactive-rgb-mixer-sliders > div {
+    padding-bottom: 5rem;
+}
+
+#interactive-rgb-mixer-sliders > div:last-child {
+    padding-bottom: 3rem;
+}
+
+.interactive-rgb-mixer-slider {
+    margin-top: 0.2rem;
+}
+
+/* RGB colours */
+#interactive-rgb-mixer-sliders > div:nth-child(1) .noUi-connect {
+    background: red;
+}
+
+#interactive-rgb-mixer-sliders > div:nth-child(2) .noUi-connect {
+    background: lime;
+}
+
+#interactive-rgb-mixer-sliders > div:nth-child(3) .noUi-connect {
+    background: blue;
+}
+
+#pixelmania-logo {
+    height: 5rem;
+}
+
+#interactive-rgb-mixer-colour-code {
+    font: 1.5rem "Courier New", monospace;
+    word-break: break-word;
+}
